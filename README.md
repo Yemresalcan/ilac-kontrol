@@ -15,5 +15,13 @@ React Native + Expo (TypeScript).
 ```bash
 npm install
 npx expo start   # Expo Go ile telefonda açmak için QR kodu okutun
-npx tsc --noEmit # tip kontrolü
+npm run lint      # ESLint + Prettier
+npm run typecheck # tip kontrolü
 ```
+
+Klasörler:
+
+- `src/app/`: ekranlar (Expo Router, her dosya bir ekran)
+- `src/components/`: ortak bileşenler
+- `src/lib/`: iş mantığı (karekod ayrıştırma, eşleştirme vb.)
+- `src/data/`: uygulamayla gelen veriler (ilaç listesi vb.)
